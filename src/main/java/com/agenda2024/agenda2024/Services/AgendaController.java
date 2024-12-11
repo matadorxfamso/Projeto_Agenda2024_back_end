@@ -51,7 +51,7 @@ agenda) {
     URI location= ServletUriComponentsBuilder
                   .fromCurrentRequest()
                   .path("/{id}")
-                  .buildAndExpand(newAgenda.Id())
+                  .buildAndExpand(newAgenda.id())
                   .toUri();
 
         return ResponseEntity.created(location).body(newAgenda);
