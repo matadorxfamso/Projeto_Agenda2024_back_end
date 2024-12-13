@@ -1,4 +1,4 @@
-FROM maven:3.8.4-openjdk-21-slim AS build
+FROM maven:3.8.4-openjdk-17-slim AS build
 COPY . /home/app/Projeto_Agenda2024_back_end
 RUN mvn -v
 RUN mvn -f /home/app/Projeto_Agenda2024_back_end/pom.xml clean package
